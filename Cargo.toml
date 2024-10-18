@@ -1,0 +1,13 @@
+[package]
+name = "darkrust-bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serenity = { version = "0.12", features = ["client", "gateway"] }
+tokio = { version = "1", features = ["full"] }
+dotenv = "0.15"
+sqlx = { version = "0.6", features = ["runtime-tokio-native-tls", "postgres"] }
+poise = "0.5"
+log = "0.4"
+env_logger = "0.9"
